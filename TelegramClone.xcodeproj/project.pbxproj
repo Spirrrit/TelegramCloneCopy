@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E051E292B5FCE35000335E5 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E282B5FCE35000335E5 /* ChatCell.swift */; };
+		9E051E2B2B5FCE5C000335E5 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E2A2B5FCE5C000335E5 /* Source.swift */; };
+		9E051E2D2B5FFA1E000335E5 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E2C2B5FFA1E000335E5 /* ContactCell.swift */; };
 		B0CA51D52B59050100450F39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CA51D42B59050100450F39 /* MainTabBarController.swift */; };
 		B0DEDB792B57B4960046E749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEDB782B57B4960046E749 /* AppDelegate.swift */; };
 		B0DEDB7B2B57B4960046E749 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEDB7A2B57B4960046E749 /* SceneDelegate.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E051E282B5FCE35000335E5 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		9E051E2A2B5FCE5C000335E5 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		9E051E2C2B5FFA1E000335E5 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		B0CA51D42B59050100450F39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B0DEDB752B57B4960046E749 /* TelegramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DEDB782B57B4960046E749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 		B0DEDB912B57BC0D0046E749 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9E051E2A2B5FCE5C000335E5 /* Source.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,6 +111,8 @@
 		B0DEDB922B57BCFD0046E749 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9E051E282B5FCE35000335E5 /* ChatCell.swift */,
+				9E051E2C2B5FFA1E000335E5 /* ContactCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,11 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E051E2D2B5FFA1E000335E5 /* ContactCell.swift in Sources */,
 				B0DEDB832B57B4960046E749 /* TelegramClone.xcdatamodeld in Sources */,
+				9E051E292B5FCE35000335E5 /* ChatCell.swift in Sources */,
 				B0DEDB7D2B57B4960046E749 /* ChatsVC.swift in Sources */,
 				B0DEDB792B57B4960046E749 /* AppDelegate.swift in Sources */,
 				B0DEDB7B2B57B4960046E749 /* SceneDelegate.swift in Sources */,
 				B0DEDB942B57BE960046E749 /* ContactsVC.swift in Sources */,
+				9E051E2B2B5FCE5C000335E5 /* Source.swift in Sources */,
 				B0DEDB962B57BEA90046E749 /* SettingsVC.swift in Sources */,
 				B0CA51D52B59050100450F39 /* MainTabBarController.swift in Sources */,
 			);
