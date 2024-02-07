@@ -12,7 +12,7 @@ class ContactCell: UITableViewCell {
     var avatar: UIImageView = {
         var avatar = UIImageView()
         avatar.layer.masksToBounds = true
-        avatar.layer.cornerRadius = 0
+        avatar.layer.cornerRadius = 20
         return avatar
     }()
     var name: UILabel = {

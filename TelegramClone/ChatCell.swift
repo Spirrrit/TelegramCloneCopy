@@ -12,7 +12,7 @@ class ChatCell: UITableViewCell {
     var avatar: UIImageView = {
         var avatar = UIImageView()
         avatar.layer.masksToBounds = true
-        avatar.layer.cornerRadius = 25
+        avatar.layer.cornerRadius = 35
         return avatar
     }()
     var name: UILabel = {
@@ -32,6 +32,12 @@ class ChatCell: UITableViewCell {
         lable.textColor = .lightGray
         return lable
     }()
+//    var status: UIImageView = {
+//        var status = UIImageView()
+//        status.layer.masksToBounds = true
+//        status.layer.cornerRadius = 0
+//        return status
+//    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -67,6 +73,7 @@ class ChatCell: UITableViewCell {
                 time.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
                 time.leadingAnchor.constraint(equalTo: name.trailingAnchor, constant: 5),
                 time.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
+                
             ])
             
         
@@ -78,5 +85,8 @@ class ChatCell: UITableViewCell {
         message.text = contact.message
         time.text = contact.time
     }
+    
+
+    
     
 }

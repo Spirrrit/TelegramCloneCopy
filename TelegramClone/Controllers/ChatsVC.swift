@@ -10,7 +10,7 @@ import UIKit
 class ChatsVC: UIViewController {
 
     let search = UISearchController()
-    let contact = Source.makeContacts()
+    var contact = Source.makeChats()
     let tableView : UITableView = .init()
     
     override func viewDidLoad() {
@@ -30,6 +30,8 @@ class ChatsVC: UIViewController {
 //        tableView.rowHeight = 80
         
     }
+    
+
     
     @objc func addChatButonDidTaped(){
         print("addButonDidTaped")

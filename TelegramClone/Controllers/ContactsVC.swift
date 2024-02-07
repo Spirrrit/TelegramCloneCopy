@@ -8,10 +8,22 @@
 import UIKit
 
 class ContactsVC: UIViewController {
-
-    let search = UISearchController()
-    let contact = Source.makeContacts()
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    var contact = Source.makeContacts()
+    var filterContact = [Contact]()
     let tableView : UITableView = .init()
+    var isEmpty: Bool {
+        guard let text = searchController.searchBar.text else { return false }
+        return text.isEmpty
+    }
+    var isFiltering: Bool {
+        return !isEmpty && searchController.isActive
+    }
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,22 +31,43 @@ class ContactsVC: UIViewController {
         title = "Contacts"
         setupTableView()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Сортировка", style: .plain, target: self, action: #selector(sortButtonDidTaped))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addContactButonDidTaped))
-        navigationItem.searchController = search
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Сортировка", style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addContactButon))
+        
+
+        let timeSortAction = UIAction(title: "по времени захода") {  _ in
+            //логика
+        }
+        let nameSortAction = UIAction(title: "по имени") {  _ in
+        }
+        let sortMenu = UIMenu(children: [timeSortAction, nameSortAction])
+        
+        navigationItem.leftBarButtonItem?.menu = sortMenu
+        
+        
 
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(ContactCell.self, forCellReuseIdentifier: "ContactCell")
         tableView.rowHeight = 50
         
+        //setup SearchController
+        navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
+        
+        
     }
     
-    @objc func sortButtonDidTaped(){
-        print("sortButtonDidTaped")
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
-    @objc func addContactButonDidTaped(){
+    
+    @objc func addContactButon(){
         print("addContactButonDidTaped")
+        
+        let nav = UINavigationController(rootViewController: CreateContactVC())
+        present(nav, animated: true)
+  
     }
     
     func setupTableView(){
@@ -53,17 +86,44 @@ class ContactsVC: UIViewController {
 
 extension ContactsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        contact.count
+        if isFiltering {
+            filterContact.count
+        } else {
+            contact.count
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as? ContactCell
         else { fatalError("Cell") }
-        cell.configureCell(contact: contact[indexPath.row])
+        
+        if isFiltering {
+            cell.configureCell(contact: filterContact[indexPath.row])
+        } else {
+            cell.configureCell(contact: contact[indexPath.row])
+        }
+        
+        
         return cell
     }
 }
 
 extension ContactsVC: UITableViewDelegate {
 
+}
+
+extension ContactsVC: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        searching(searchController.searchBar.text!)
+    }
+    private func searching(_ searchItem: String){
+        filterContact = contact.filter({ (contact: Contact) in
+            contact.name.lowercased().contains(searchItem.lowercased())
+        })
+        tableView.reloadData()
+    }
+    
+    
 }
