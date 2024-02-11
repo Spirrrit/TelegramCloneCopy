@@ -10,6 +10,7 @@
 		9E051E292B5FCE35000335E5 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E282B5FCE35000335E5 /* ChatCell.swift */; };
 		9E051E2B2B5FCE5C000335E5 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E2A2B5FCE5C000335E5 /* Source.swift */; };
 		9E051E2D2B5FFA1E000335E5 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E2C2B5FFA1E000335E5 /* ContactCell.swift */; };
+		9EC0806D2B794D7C0070B0C0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0806C2B794D7C0070B0C0 /* File.swift */; };
 		B0BF16A22B73DCEF0024D1CE /* CreateContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF16A12B73DCEF0024D1CE /* CreateContactVC.swift */; };
 		B0CA51D52B59050100450F39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CA51D42B59050100450F39 /* MainTabBarController.swift */; };
 		B0DEDB792B57B4960046E749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEDB782B57B4960046E749 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		9E051E282B5FCE35000335E5 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		9E051E2A2B5FCE5C000335E5 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		9E051E2C2B5FFA1E000335E5 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		9EC0806C2B794D7C0070B0C0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		B0BF16A12B73DCEF0024D1CE /* CreateContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactVC.swift; sourceTree = "<group>"; };
 		B0CA51D42B59050100450F39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B0DEDB752B57B4960046E749 /* TelegramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 		B0DEDB922B57BCFD0046E749 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9EC0806C2B794D7C0070B0C0 /* File.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B0DEDB702B57B4960046E749 /* Build configuration list for PBXProject "TelegramClone" */;
+			buildConfigurationList = B0DEDB702B57B4960046E749 /* Build configuration list for PBXProject "TelegramCloneCopy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E051E2D2B5FFA1E000335E5 /* ContactCell.swift in Sources */,
+				9EC0806D2B794D7C0070B0C0 /* File.swift in Sources */,
 				B0DEDB832B57B4960046E749 /* TelegramClone.xcdatamodeld in Sources */,
 				9E051E292B5FCE35000335E5 /* ChatCell.swift in Sources */,
 				B0DEDB7D2B57B4960046E749 /* ChatsVC.swift in Sources */,
@@ -394,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0DEDB702B57B4960046E749 /* Build configuration list for PBXProject "TelegramClone" */ = {
+		B0DEDB702B57B4960046E749 /* Build configuration list for PBXProject "TelegramCloneCopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0DEDB8A2B57B4980046E749 /* Debug */,
