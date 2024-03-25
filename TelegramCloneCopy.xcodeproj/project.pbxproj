@@ -10,9 +10,16 @@
 		9E051E292B5FCE35000335E5 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E282B5FCE35000335E5 /* ChatCell.swift */; };
 		9E051E2B2B5FCE5C000335E5 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E2A2B5FCE5C000335E5 /* Source.swift */; };
 		9E051E2D2B5FFA1E000335E5 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E051E2C2B5FFA1E000335E5 /* ContactCell.swift */; };
-		9EC0806D2B794D7C0070B0C0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0806C2B794D7C0070B0C0 /* File.swift */; };
 		B0BF16A22B73DCEF0024D1CE /* CreateContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF16A12B73DCEF0024D1CE /* CreateContactVC.swift */; };
 		B0CA51D52B59050100450F39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CA51D42B59050100450F39 /* MainTabBarController.swift */; };
+		B0D729452B9F963A0087860F /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D729442B9F963A0087860F /* RegisterUserRequest.swift */; };
+		B0D729472B9F964C0087860F /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D729462B9F964C0087860F /* LoginUserRequest.swift */; };
+		B0D729492B9F96540087860F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D729482B9F96540087860F /* User.swift */; };
+		B0D7294E2B9F970C0087860F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7294D2B9F970C0087860F /* RegisterVC.swift */; };
+		B0D729502B9F971E0087860F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7294F2B9F971E0087860F /* LoginVC.swift */; };
+		B0D729522B9F973A0087860F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D729512B9F973A0087860F /* AuthService.swift */; };
+		B0D729542B9F97510087860F /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D729532B9F97510087860F /* AlertManager.swift */; };
+		B0D729562B9F97670087860F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D729552B9F97670087860F /* Validator.swift */; };
 		B0DEDB792B57B4960046E749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEDB782B57B4960046E749 /* AppDelegate.swift */; };
 		B0DEDB7B2B57B4960046E749 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEDB7A2B57B4960046E749 /* SceneDelegate.swift */; };
 		B0DEDB7D2B57B4960046E749 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEDB7C2B57B4960046E749 /* ChatsVC.swift */; };
@@ -21,15 +28,23 @@
 		B0DEDB882B57B4980046E749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0DEDB862B57B4980046E749 /* LaunchScreen.storyboard */; };
 		B0DEDB942B57BE960046E749 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEDB932B57BE960046E749 /* ContactsVC.swift */; };
 		B0DEDB962B57BEA90046E749 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEDB952B57BEA90046E749 /* SettingsVC.swift */; };
+		B0E4C5102BA44CFD007F84DC /* VerificationLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E4C50F2BA44CFD007F84DC /* VerificationLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E051E282B5FCE35000335E5 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		9E051E2A2B5FCE5C000335E5 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		9E051E2C2B5FFA1E000335E5 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
-		9EC0806C2B794D7C0070B0C0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		B0BF16A12B73DCEF0024D1CE /* CreateContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactVC.swift; sourceTree = "<group>"; };
 		B0CA51D42B59050100450F39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B0D729442B9F963A0087860F /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
+		B0D729462B9F964C0087860F /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		B0D729482B9F96540087860F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B0D7294D2B9F970C0087860F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		B0D7294F2B9F971E0087860F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B0D729512B9F973A0087860F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B0D729532B9F97510087860F /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		B0D729552B9F97670087860F /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		B0DEDB752B57B4960046E749 /* TelegramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DEDB782B57B4960046E749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0DEDB7A2B57B4960046E749 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +55,7 @@
 		B0DEDB892B57B4980046E749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0DEDB932B57BE960046E749 /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		B0DEDB952B57BEA90046E749 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		B0E4C50F2BA44CFD007F84DC /* VerificationLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationLoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0D7294A2B9F965C0087860F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B0D729442B9F963A0087860F /* RegisterUserRequest.swift */,
+				B0D729462B9F964C0087860F /* LoginUserRequest.swift */,
+				B0D729482B9F96540087860F /* User.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		B0DEDB6C2B57B4960046E749 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +100,9 @@
 			children = (
 				9E051E282B5FCE35000335E5 /* ChatCell.swift */,
 				9E051E2C2B5FFA1E000335E5 /* ContactCell.swift */,
+				B0D729512B9F973A0087860F /* AuthService.swift */,
+				B0D729532B9F97510087860F /* AlertManager.swift */,
+				B0D729552B9F97670087860F /* Validator.swift */,
 				B0DEDB922B57BCFD0046E749 /* View */,
 				B0DEDB912B57BC0D0046E749 /* Model */,
 				B0DEDB902B57BBF40046E749 /* Controllers */,
@@ -103,6 +132,9 @@
 				B0DEDB7C2B57B4960046E749 /* ChatsVC.swift */,
 				B0DEDB952B57BEA90046E749 /* SettingsVC.swift */,
 				B0BF16A12B73DCEF0024D1CE /* CreateContactVC.swift */,
+				B0D7294F2B9F971E0087860F /* LoginVC.swift */,
+				B0E4C50F2BA44CFD007F84DC /* VerificationLoginVC.swift */,
+				B0D7294D2B9F970C0087860F /* RegisterVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -111,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				9E051E2A2B5FCE5C000335E5 /* Source.swift */,
+				B0D7294A2B9F965C0087860F /* Auth */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,7 +151,6 @@
 		B0DEDB922B57BCFD0046E749 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9EC0806C2B794D7C0070B0C0 /* File.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,15 +226,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E051E2D2B5FFA1E000335E5 /* ContactCell.swift in Sources */,
-				9EC0806D2B794D7C0070B0C0 /* File.swift in Sources */,
 				B0DEDB832B57B4960046E749 /* TelegramClone.xcdatamodeld in Sources */,
 				9E051E292B5FCE35000335E5 /* ChatCell.swift in Sources */,
 				B0DEDB7D2B57B4960046E749 /* ChatsVC.swift in Sources */,
 				B0DEDB792B57B4960046E749 /* AppDelegate.swift in Sources */,
 				B0BF16A22B73DCEF0024D1CE /* CreateContactVC.swift in Sources */,
+				B0D729492B9F96540087860F /* User.swift in Sources */,
 				B0DEDB7B2B57B4960046E749 /* SceneDelegate.swift in Sources */,
+				B0D729542B9F97510087860F /* AlertManager.swift in Sources */,
 				B0DEDB942B57BE960046E749 /* ContactsVC.swift in Sources */,
+				B0D7294E2B9F970C0087860F /* RegisterVC.swift in Sources */,
+				B0D729502B9F971E0087860F /* LoginVC.swift in Sources */,
+				B0D729562B9F97670087860F /* Validator.swift in Sources */,
+				B0E4C5102BA44CFD007F84DC /* VerificationLoginVC.swift in Sources */,
 				9E051E2B2B5FCE5C000335E5 /* Source.swift in Sources */,
+				B0D729452B9F963A0087860F /* RegisterUserRequest.swift in Sources */,
+				B0D729472B9F964C0087860F /* LoginUserRequest.swift in Sources */,
+				B0D729522B9F973A0087860F /* AuthService.swift in Sources */,
 				B0DEDB962B57BEA90046E749 /* SettingsVC.swift in Sources */,
 				B0CA51D52B59050100450F39 /* MainTabBarController.swift in Sources */,
 			);
@@ -362,6 +402,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.spirrit.TelegramClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,6 +432,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.spirrit.TelegramClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

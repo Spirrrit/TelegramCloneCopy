@@ -32,12 +32,16 @@ struct Contact {
   
 }
 
+enum SortImage: String {
+    case select = "checkmark"
+    case nonselect = ""
+}
+
 
 struct Source {
     static func makeChats() -> [Contact]{
         [
             .init(avatar: UIImage(named: "Слава"), name: "Слава", message: "Message", time: "00:00", status: "online"),
-            .init(avatar: UIImage(named: "Дима"), name: "Дима", message: "Message", time: "00:00", status: "online"),
             .init(avatar: UIImage(named: "Оля"), name: "Оля", message: "Message", time: "00:00", status: "online"),
             .init(avatar: UIImage(named: "Женя"), name: "Женя", message: "Message", time: "00:00", status: "online"),
             .init(avatar: UIImage(named: "Саша"), name: "Саша", message: "Message", time: "00:00", status: "online"),
@@ -53,7 +57,6 @@ struct Source {
     static func makeContacts() -> [Contact]{
         [
             .init(avatar: UIImage(named: "Слава"), name: "Слава", status: "online"),
-            .init(avatar: UIImage(named: "Дима"), name: "Дима", status: "online"),
             .init(avatar: UIImage(named: "Оля"), name: "Оля", status: "online"),
             .init(avatar: UIImage(named: "Женя"), name: "Женя", status: "online"),
             .init(avatar: UIImage(named: "Саша"), name: "Саша", status: "online"),

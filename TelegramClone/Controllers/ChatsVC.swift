@@ -38,6 +38,7 @@ class ChatsVC: UIViewController {
     }
     @objc func editChatButonDidTaped(){
         print("editButonDidTaped")
+        
     }
     
     func setupTableView(){
@@ -67,4 +68,8 @@ extension ChatsVC: UITableViewDataSource {
 
 extension ChatsVC: UITableViewDelegate {
 
+//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//        
+//    }
+    
 }

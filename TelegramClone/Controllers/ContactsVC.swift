@@ -31,19 +31,23 @@ class ContactsVC: UIViewController {
         title = "Contacts"
         setupTableView()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Сортировка", style: .plain, target: self, action: nil)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Сортировка", style: .plain, target: self, action: nil)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Сортировка", image: UIImage(systemName: ""), target: self, action: nil,menu: createMenu())
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addContactButon))
         
+        
+//        let timeSortAction = UIAction(title: "по времени захода"){  _ in
+//
+//        }
+//        let nameSortAction = UIAction(title: "по имени") {  _ in
+//
+//        }
+//        
+//        let sortMenu = UIMenu(children: [timeSortAction, nameSortAction])
+//        navigationItem.leftBarButtonItem?.menu = sortMenu
+        
 
-        let timeSortAction = UIAction(title: "по времени захода") {  _ in
-            //логика
-        }
-        let nameSortAction = UIAction(title: "по имени") {  _ in
-        }
-        let sortMenu = UIMenu(children: [timeSortAction, nameSortAction])
-        
-        navigationItem.leftBarButtonItem?.menu = sortMenu
-        
+
         
 
         tableView.delegate = self
@@ -57,10 +61,28 @@ class ContactsVC: UIViewController {
         
         
     }
+ 
+    
+    func createMenu() -> UIMenu {
+        
+        var state = "checkmark"
+        
+        
+        let menu = UIMenu(title: "", children: [
+            UIAction(title: "по времени захода", image: UIImage(systemName: state)){ _ in },
+            UIAction(title: "по имени", image: UIImage(systemName: state)){ _ in
+                state = ""
+            },
+        ])
+        
+        return  menu
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
+    
+
     
     @objc func addContactButon(){
         print("addContactButonDidTaped")
